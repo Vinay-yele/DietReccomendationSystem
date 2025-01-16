@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Diet Planner - Healthy Eating for Students</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .nav {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #4CAF50;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            padding: 5rem 2rem;
+        }
+
+        .section-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .feature-card h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        .benefits {
+            text-align: center;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-item {
+            padding: 2rem;
+            border-radius: 10px;
+            background: #f9f9f9;
+        }
+
+        .how-it-works {
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">SmartDiet</div>
+            <div class="nav-links">
+                <a href="#features.html">Features</a>
+                <a href="#benefits.html">Benefits</a>
+                <a href="#how-it-works.html">How It Works</a>
+                <a href="#recommend.html.html" class="cta-button">Get Started</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Optimize Your Hostel Diet</h1>
+        <p>Get personalized diet recommendations based on your hostel menu and fitness goals. Make the most of your available food options for better health and performance.</p>
+        <a href="recommend.html" class="cta-button">Start Your Health Journey</a>
+    </section>
+
+    <section id="features" class="section features">
+        <div class="section-content">
+            <h2>Smart Features for Better Nutrition</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>PDF Menu Analysis</h3>
+                    <p>Simply upload your hostel menu PDF and get instant nutritional insights</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Personalized Goals</h3>
+                    <p>Choose your fitness goal - muscle gain, fat loss, or general health</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Smart Recommendations</h3>
+                    <p>Get tailored food combinations based on your available options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section benefits">
+        <div class="section-content">
+            <h2>Why Focus on Diet?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Better Academic Performance</h3>
+                    <p>Proper nutrition improves focus, memory, and cognitive function</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Enhanced Physical Health</h3>
+                    <p>Meet your fitness goals while maintaining balanced nutrition</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Energy Management</h3>
+                    <p>Maintain consistent energy levels throughout your busy day</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section how-it-works">
+        <div class="section-content">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Upload Menu</h3>
+                    <p>Share your hostel's menu in PDF format</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Set Goals</h3>
+                    <p>Choose your health and fitness objectives</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Recommendations</h3>
+                    <p>Receive personalized meal combinations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SmartDiet - Making Healthy Eating Simple for Students</p>
+    </footer>
+</body>
+</html>
